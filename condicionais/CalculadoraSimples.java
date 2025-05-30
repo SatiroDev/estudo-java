@@ -28,11 +28,11 @@ public class CalculadoraSimples {
                 System.out.printf("%.2f x %.2f = %.2f", numero1, numero2, multiplicacao); 
                 break;
             case "/":
-                double divisao = numero1 - numero2;
+                double divisao = numero1 / numero2;
                 System.out.printf("%.2f / %.2f = %.2f", numero1, numero2, divisao); 
                 break;
             default:
-                System.out.printf("Operação '%d' inválida!", operacao);
+                System.out.printf("Operação '%s' inválida!", operacao);
                 break;
         }
         input.close();
