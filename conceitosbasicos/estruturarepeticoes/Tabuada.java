@@ -12,5 +12,6 @@ public class Tabuada {
             System.out.printf("%d x %d = %d%n", numero, contador, numero*contador);
             contador ++;
         }
+        input.close();
     }
 }
