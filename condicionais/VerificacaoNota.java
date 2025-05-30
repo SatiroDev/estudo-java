@@ -16,5 +16,7 @@ public class VerificacaoNota {
         else {
             System.out.println("Reprovado!");
         }
+        
+        input.close();
     }
 }
