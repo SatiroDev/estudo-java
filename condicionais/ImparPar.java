@@ -1,6 +1,6 @@
 package condicionais;
 
-public class impar_par {
+public class ImparPar{
     public static void main(String[] args) {
         int numero = 4;
         if (numero % 2 == 0) {
