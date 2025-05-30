@@ -8,7 +8,7 @@ public class Tabuada {
         int numero = input.nextInt();
         int contador = 1;
         System.out.printf("Tabuada do %d:%n", numero);
-        while(contador <= numero) {
+        while(contador <= 10) {
             System.out.printf("%d x %d = %d%n", numero, contador, numero*contador);
             contador ++;
         }
