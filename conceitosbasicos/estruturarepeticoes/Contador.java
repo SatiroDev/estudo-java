@@ -1,4 +1,5 @@
 package conceitosbasicos.estruturarepeticoes;
+
 import java.util.Scanner;
 public class Contador {
     
