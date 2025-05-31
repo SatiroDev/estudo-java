@@ -5,7 +5,13 @@ public class VerificarPrimo {
         Scanner input = new Scanner(System.in);
         System.out.println("Digite um número: ");
         int num = input.nextInt();
-        verificarPrimo(num);
+        if (verificarPrimo(num)) {
+            System.out.printf("O número '%d' é primo", num);
+        }
+        else {
+            System.out.printf("O número '%d' não é primo", num);
+        }
+    
     }
     public static boolean verificarPrimo(int numero) {
         int contador = 0;
