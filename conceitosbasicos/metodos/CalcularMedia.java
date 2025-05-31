@@ -12,8 +12,15 @@ public class CalcularMedia {
         double n3 = input.nextDouble();
         double media = calcularMedia(n1, n2, n3);
         if (media >= 7) {
-            System.out.printf("Sua média foi: %.2f%n APROVADO!", media);
+            System.out.printf("Sua média foi: %.2f%nAPROVADO!", media);
         }
+        else if (media >= 5 && media < 7) {
+            System.out.printf("Sua média foi: %.2f%nRECUPERAÇÃO!", media);
+        }
+        else {
+            System.out.printf("Sua média foi: %.2f%nREPROVADO!", media);
+        }
+        input.close();
     }
 
     public static double calcularMedia(double nota1, double nota2, double nota3) {
