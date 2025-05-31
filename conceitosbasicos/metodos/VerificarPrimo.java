@@ -11,6 +11,7 @@ public class VerificarPrimo {
         else {
             System.out.printf("O número '%d' não é primo", num);
         }
+        input.close();
     
     }
     public static boolean verificarPrimo(int numero) {
