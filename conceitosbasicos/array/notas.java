@@ -2,6 +2,7 @@ package conceitosbasicos.array;
 import java.util.Scanner;
 public class notas {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         double[] resp = add_notas(0);
 
         int quantidade = resp.length;
@@ -11,10 +12,10 @@ public class notas {
         }
         System.out.println();
         System.out.printf("Média: %.2f", media(resp));
+        input.close();
     }
 
     public static double[] add_notas(double entrada){
-        Scanner input = new Scanner(System.in);
         double[] notas_aluno = new double[5]; 
         for (int i = 0; i < 5; i++) {
             System.out.printf("Digite a %d° nota: ", i+1);
@@ -22,7 +23,6 @@ public class notas {
             notas_aluno[i] = nota;
         }
         System.out.println();
-        input.close();
         return notas_aluno;
     }
 
@@ -34,5 +34,5 @@ public class notas {
         double media = soma / notas.length;
         return media;
     }
-    
+        
 }
