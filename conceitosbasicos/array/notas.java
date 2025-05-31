@@ -9,6 +9,7 @@ public class notas {
         for (int i = 0; i < quantidade; i++) {
             System.out.printf("Nota %d: %.2f%n", i+1, resp[i]);
         }
+        System.out.println();
         System.out.printf("Média: %.2f", media(resp));
     }
 
