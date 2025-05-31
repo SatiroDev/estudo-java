@@ -1,12 +1,12 @@
 package conceitosbasicos.array;
 import java.util.Scanner;
 
-public class ContadorVogais {
+public class MaiorMenor {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int[] resp = lista(input);
         int maior_num = maior_numero(resp);
-        System.out.printf("O maior número adicionado foi %d", maior_num);
+        System.out.printf("O maior número digitado foi foi %d", maior_num);
         input.close();
     
     }
