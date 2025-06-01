@@ -7,10 +7,19 @@ public class ContarPalavras {
         String frase = input.nextLine();
         int resp = contarPalavras(frase);
         System.out.printf("A frase '%s' possui %d palavras", frase, resp);
+        input.close();
     }
     public static int contarPalavras(String frase) {
         String[] frase_lista = frase.split(" ");
-        int quantidade_palavras = frase_lista.length;
+        int quantidade_palavras = 0;
+        for (String palavra: frase_lista) {
+            if (palavra.equals("")) {
+            }
+            else {
+                quantidade_palavras ++;
+            }
+            
+        }
         return quantidade_palavras;
     }
 }
