@@ -1,0 +1,16 @@
+package conceitosbasicos.string;
+import java.util.Scanner;
+public class ContarPalavras {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Escreva uma frase:");
+        String frase = input.nextLine();
+        int resp = contarPalavras(frase);
+        System.out.printf("A frase '%s' possui %d palavras", frase, resp);
+    }
+    public static int contarPalavras(String frase) {
+        String[] frase_lista = frase.split(" ");
+        int quantidade_palavras = frase_lista.length;
+        return quantidade_palavras;
+    }
+}
