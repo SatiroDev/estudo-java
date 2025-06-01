@@ -10,9 +10,10 @@ public class PalavrasProibidas {
         System.out.println(resp);
         input.close();
     }
+
     public static String SubstituirPalavrasProibidas(String frase) {
-        frase = frase.replaceAll("(?i)\\bchato+\\b", "*****");
-        frase = frase.replaceAll("(?i)\\bestranho+\\b", "*****");
+        frase = frase.replaceAll("chato", "*****");
+        frase = frase.replaceAll("estranho", "*****");
         return frase;
     }
 }
