@@ -5,13 +5,13 @@ public class PalavrasProibidas {
         Scanner input = new Scanner(System.in);
         System.out.println("Escreva algo:");
         String frase = input.nextLine();
-        
+        System.out.println("Saída com censura:");
         String resp = SubstituirPalavrasProibidas(frase);
         System.out.println(resp);
         input.close();
     }
     public static String SubstituirPalavrasProibidas(String frase) {
-        String[] frase_lista = frase.split("");
+        String[] frase_lista = frase.split(" ");
          for (String palavra: frase_lista) {
             if (palavra.equalsIgnoreCase("chato")) {
                 frase = frase.replaceAll("chato", "*****");
