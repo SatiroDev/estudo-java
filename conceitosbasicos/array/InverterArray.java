@@ -8,7 +8,6 @@ public class InverterArray {
         for (int n: nova) { 
             System.out.printf("%d ", n);
         }
-
     }
 
     public static int[] inverterLista(int[] numeros) {
