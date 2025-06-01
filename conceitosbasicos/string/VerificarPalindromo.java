@@ -7,8 +7,8 @@ public class VerificarPalindromo {
         String frase = input.nextLine();
         String frase_sem_espaco = frase.replace(" ", "");
         char[] resp = verificarPalindromo(frase_sem_espaco);
-        String r = new String(resp);
-        if (r.equals(frase_sem_espaco)) {
+        String resp_str = new String(resp);
+        if (resp_str.toLowerCase().equals(frase_sem_espaco.toLowerCase())) {
             System.out.printf("O que você escreveu '%s' é palindromo!", frase);
         }
         else {
