@@ -8,7 +8,11 @@ public class Carro {
         cf.modelo = "Corolla";
         cf.ano = 2021;
         cf.velocidadeAtual = 0;
-        
+        cf.mostrarVelocidade();
+        cf.acelerar();
+        cf.mostrarVelocidade();
+        cf.frear();
+        cf.mostrarVelocidade();
     }
 }
 
@@ -27,13 +31,10 @@ class CarroFunc {
         if (velocidadeAtual >= 10) {
             velocidadeAtual -= 10;
         }
-        else {
-            return;
-        }
     }
 
     void mostrarVelocidade() {
-        System.out.printf("Velocidade atual é de %d km/h", velocidadeAtual);
+        System.out.printf("Velocidade atual é de %d km/h%n", velocidadeAtual);
     }
 
 }
