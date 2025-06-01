@@ -10,16 +10,20 @@ public class ContarPalavras {
         input.close();
     }
     public static int contarPalavras(String frase) {
-        String[] frase_lista = frase.split(" ");
-        int quantidade_palavras = 0;
-        for (String palavra: frase_lista) {
-            if (palavra.equals("")) {
-            }
-            else {
-                quantidade_palavras ++;
-            }
-            
-        }
-        return quantidade_palavras;
+    
+        String[] palavras = frase.trim().split("\\s+");
+        return palavras.length;
     }
+
+        // String[] frase_lista = frase.split(" ");
+        // int quantidade_palavras = 0;
+        // for (String palavra: frase_lista) {
+        //     if (palavra.equals("")) {
+        //     }
+        //     else {
+        //         quantidade_palavras ++;
+        //     }
+        // }
+        // return quantidade_palavras;
+    
 }
