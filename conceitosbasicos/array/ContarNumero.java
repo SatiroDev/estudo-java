@@ -7,7 +7,13 @@ public class ContarNumero {
         System.out.println("Digite um número inteiro:");
         int escolha_numero = input.nextInt();
         int resp = contarNumero(escolha_numero, array);
-        System.out.printf("O número %d aparece %d vezes na lista", escolha_numero, resp);
+        if (resp == 0) {
+            System.out.printf("O número %d não foi encontrado na lista!", escolha_numero);
+        }
+        else {
+            System.out.printf("O número %d aparece %d vezes na lista", escolha_numero, resp);
+        }
+        
         input.close();
     }
 
