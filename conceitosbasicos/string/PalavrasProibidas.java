@@ -11,15 +11,8 @@ public class PalavrasProibidas {
         input.close();
     }
     public static String SubstituirPalavrasProibidas(String frase) {
-        String[] frase_lista = frase.split(" ");
-         for (String palavra: frase_lista) {
-            if (palavra.equalsIgnoreCase("chato")) {
-                frase = frase.replaceAll("chato", "*****");
-            }
-            else if (palavra.equalsIgnoreCase("estranho")) {
-                frase = frase.replaceAll("estranho", "********");
-            }
-        }
+        frase = frase.replaceAll("(?i)\\bchato+\\b", "*****");
+        frase = frase.replaceAll("(?i)\\bestranho+\\b", "*****");
         return frase;
     }
 }
