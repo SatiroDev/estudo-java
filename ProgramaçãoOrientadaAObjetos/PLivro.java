@@ -8,11 +8,11 @@ public class PLivro {
         l.quantidade_de_paginas = 256;
         l.pagina_atual = 1;
 
-        l.motrarDetalhesLivro();
+        l.mostrarDetalhesLivro();
         l.avancarPagina();
-        l.motrarDetalhesLivro();
+        l.mostrarDetalhesLivro();
         l.voltarPagina();
-        l.motrarDetalhesLivro();
+        l.mostrarDetalhesLivro();
 
     }
 }
@@ -41,7 +41,7 @@ class Livro {
         }
     }
 
-    void motrarDetalhesLivro() {
+    void mostrarDetalhesLivro() {
         System.out.println("Detalhes:");
         System.out.printf("Título do livro: %s%n", titulo);
         System.out.printf("Autor do livro: %s%n", autor);
