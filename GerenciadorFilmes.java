@@ -11,6 +11,15 @@ public class GerenciadorFilmes {
         f.avaliar(9.0);
         f.mostrarDetalhes();
         System.out.println(f.ehClassico());
+        f.mostrarDetalhes();
+        f.avaliar(7.5);
+        f.avaliar(9.0);
+        f.avaliar(8.0);
+        f.mostrarDetalhes();
+        System.out.println(f.ehClassico());
+
+        f.avaliar(10.0);
+        f.mostrarDetalhes();
 
 
     }
@@ -21,13 +30,15 @@ class Filme {
     String diretor;
     int ano_de_lancamento;
     int duracao_em_minutos;
+    double soma_avaliacoes = 0;
     double avaliacao_media = 0;
     int total_de_avaliacoes = 0;
 
     void avaliar(double nota) {
         if (nota >= 0 && nota <= 10) {
             total_de_avaliacoes ++;
-            avaliacao_media = (avaliacao_media + nota) / total_de_avaliacoes;
+            soma_avaliacoes += nota;
+            avaliacao_media = soma_avaliacoes / total_de_avaliacoes;
         }
         else {
             System.out.println("Nota inválida! Aceitamos notas de 0 a 10!");
