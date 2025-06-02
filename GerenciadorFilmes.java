@@ -54,6 +54,7 @@ class Filme {
     }
 
     boolean ehClassico() {
+        System.out.printf("O filme é clássico? ");
         return 2025 - ano_de_lancamento > 25;
     }
 }
