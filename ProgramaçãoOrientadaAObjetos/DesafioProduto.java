@@ -10,6 +10,7 @@ public class DesafioProduto {
         Produto p2 = new Produto();
         Produto p3 = new Produto();
 
+
         p1.nome = "Feijão";
         p1.preco = 5.99;
         p1. quantidade = 3;
