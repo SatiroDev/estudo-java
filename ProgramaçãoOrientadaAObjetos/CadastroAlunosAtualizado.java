@@ -49,6 +49,7 @@ public class CadastroAlunosAtualizado {
                     System.out.println("Aluno(a) reprovado(a)!");
                 }
                 verificacao = true;
+                break;
             }
             break;
         }
