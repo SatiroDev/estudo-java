@@ -1,4 +1,4 @@
-package POOAvanc;
+package POOAvanc.ProdutosLoja;
 
 public class Produto {
     private String nome;
