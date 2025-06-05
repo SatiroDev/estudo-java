@@ -1,4 +1,4 @@
-package POOAvanc;
+package POOAvanc.GerenciadorCompras;
 
 public class GerenciamentoCompras {
     public static void main(String[] args) {
