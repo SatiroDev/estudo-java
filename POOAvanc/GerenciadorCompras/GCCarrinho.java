@@ -1,4 +1,4 @@
-package POOAvanc;
+package POOAvanc.GerenciadorCompras;
 
 public class GCCarrinho {
     private GCProduto[] produtos = new GCProduto[200];
