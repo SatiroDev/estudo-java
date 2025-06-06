@@ -4,8 +4,7 @@ public class Funcionario extends Pessoa{
     double salario;
 
     public void exibirDados() {
-        System.out.println("Nome: " + nome);
-        System.out.println("Idade: " + idade);
+        super.exibirDados();
         System.out.println("Sálario: " + salario);
     }
 }
