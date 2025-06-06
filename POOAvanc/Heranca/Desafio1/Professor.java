@@ -4,9 +4,7 @@ public class Professor extends Funcionario{
     String disciplina;
 
     public void exibirDados() {
-        System.out.println("Nome: " + nome);
-        System.out.println("Idade: " + idade);
-        System.out.println("Sálario: " + salario);
+        super.exibirDados();
         System.out.println("Disciplina: " + disciplina);
     }
 }
